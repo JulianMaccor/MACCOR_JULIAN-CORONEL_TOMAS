@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f37bfaea-fa5c-4763-b490-d43161a11747" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Maccor-Julian_Coronel-TomasPARCIAL.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logfile.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Maccor-Julian_Coronel-TomasPARCIAL/com/backend/odontologia/Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Maccor-Julian_Coronel-TomasPARCIAL/com/backend/odontologia/dao/H2Connection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Maccor-Julian_Coronel-TomasPARCIAL/com/backend/odontologia/dao/IDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Maccor-Julian_Coronel-TomasPARCIAL/com/backend/odontologia/dao/impl/OdontologoDaoColeccion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Maccor-Julian_Coronel-TomasPARCIAL/com/backend/odontologia/dao/impl/OdontologoDaoH2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Maccor-Julian_Coronel-TomasPARCIAL/com/backend/odontologia/model/Odontologo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Maccor-Julian_Coronel-TomasPARCIAL/com/backend/odontologia/service/OdontologoService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Maccor-Julian_Coronel-TomasPARCIAL/com/backend/odontologia/test/OdontologoServiceTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Maccor-Julian_Coronel-TomasPARCIAL/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/backend/odontologia/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/backend/odontologia/dao/H2Connection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/backend/odontologia/dao/IDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/backend/odontologia/dao/impl/OdontologoDaoColeccion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/backend/odontologia/dao/impl/OdontologoDaoH2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/backend/odontologia/model/Odontologo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/backend/odontologia/service/OdontologoService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/backend/odontologia/test/OdontologoServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/log4j.properties" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2YDz58jdJ0bxh34ooTD1bHyGVlD" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/Users/julianmaccor/Desktop/BACKEND PROJECT/MACCOR_JULIAN-CORONEL_TOMAS/Maccor-Julian_Coronel-TomasPARCIAL"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f37bfaea-fa5c-4763-b490-d43161a11747" name="Changes" comment="" />
+      <created>1700074752096</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1700074752096</updated>
+    </task>
+    <servers />
+  </component>
+</project>
