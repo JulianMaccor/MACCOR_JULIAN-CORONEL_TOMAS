@@ -1,4 +1,4 @@
-package com.backend.odontologia;
+package test.java.com.backend.odontologia;
 
 import com.backend.odontologia.dao.impl.OdontologoDaoColeccion;
 import com.backend.odontologia.dao.impl.OdontologoDaoH2;
@@ -6,7 +6,7 @@ import com.backend.odontologia.model.Odontologo;
 import com.backend.odontologia.service.OdontologoService;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 class OdontologoServiceTest {
 
