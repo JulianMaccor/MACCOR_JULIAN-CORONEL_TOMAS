@@ -5,7 +5,6 @@ import com.backend.clinicaOdontologica.dto.modificacion.PacienteModificacionEntr
 import com.backend.clinicaOdontologica.dto.salida.paciente.PacienteSalidaDto;
 import com.backend.clinicaOdontologica.exceptions.ResourceNotFoundException;
 
-
 import java.util.List;
 
 

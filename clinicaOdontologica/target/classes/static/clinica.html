@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Reserva de Turnos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<header>
+    <h1>Sistema de Reserva de Turnos</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#odontologos">Odontólogos</a></li>
+        <li><a href="#pacientes">Pacientes</a></li>
+        <li><a href="#turnos">Turnos</a></li>
+        <li><a href="#login">Login</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section id="odontologos">
+        <h2>Odontólogos</h2>
+        <form id="odontologo-form">
+            <label for="nombreOdontologo">Nombre:</label>
+            <input type="text" id="nombreOdontologo" name="nombreOdontologo" required>
+
+            <label for="apellidoOdontologo">Apellido:</label>
+            <input type="text" id="apellidoOdontologo" name="apellidoOdontologo" required>
+
+            <label for="matriculaOdontologo">Matrícula:</label>
+            <input type="text" id="matriculaOdontologo" name="matriculaOdontologo" required>
+
+            <button type="submit">Agregar Odontólogo</button>
+        </form>
+
+        <button id="listarOdontologos">Listar Odontólogos</button>
+
+        <!-- Lista de odontólogos -->
+        <ul id="odontologo-list"></ul>
+    </section>
+
+    <section id="pacientes">
+        <h2>Pacientes</h2>
+        <form id="paciente-form">
+            <label for="nombrePaciente">Nombre:</label>
+            <input type="text" id="nombrePaciente" name="nombrePaciente" required>
+
+            <label for="apellidoPaciente">Apellido:</label>
+            <input type="text" id="apellidoPaciente" name="apellidoPaciente" required>
+
+            <label for="dniPaciente">DNI:</label>
+            <input type="text" id="dniPaciente" name="dniPaciente" required>
+
+            <label for="fechaIngresoPaciente">Fecha de Ingreso:</label>
+            <input type="date" id="fechaIngresoPaciente" name="fechaIngresoPaciente" required>
+
+            <label for="callePaciente">Calle:</label>
+            <input type="text" id="callePaciente" name="callePaciente" required>
+
+            <label for="numeroPaciente">Número:</label>
+            <input type="text" id="numeroPaciente" name="numeroPaciente" required>
+
+            <label for="localidadPaciente">Localidad:</label>
+            <input type="text" id="localidadPaciente" name="localidadPaciente" required>
+
+            <label for="provinciaPaciente">Provincia:</label>
+            <input type="text" id="provinciaPaciente" name="provinciaPaciente" required>
+
+            <button id="agregarPaciente" type="submit">Agregar Paciente</button>
+        </form>
+
+        <button id="listarPacientes">Listar Pacientes</button>
+
+
+        <ul id="paciente-list"></ul>
+    </section>
+
+    <section id="turnos">
+        <h2>Turnos</h2>
+        <form id="turno-form">
+            <label for="pacienteTurno">Paciente:</label>
+            <input type="text" id="pacienteTurno" name="pacienteTurno" required>
+
+            <label for="odontologoTurno">Odontólogo:</label>
+            <input type="text" id="odontologoTurno" name="odontologoTurno" required>
+
+            <label for="fechaTurno">Fecha:</label>
+            <input type="text" id="fechaTurno" name="fechaTurno" required>
+
+            <button type="submit">Agregar Turno</button>
+        </form>
+
+        <button id="listarTurnos">Listar Turnos</button>
+
+
+        <ul id="turno-list"></ul>
+    </section>
+
+    <section id="login">
+        <h2>Login</h2>
+        <form id="login-form">
+            <label for="usuario">Usuario:</label>
+            <input type="text" id="usuario" name="usuario" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2023 Sistema de Reserva de Turnos</p>
+</footer>
+
+<script src="Js/app.js"></script>
+</body>
+
+</html>

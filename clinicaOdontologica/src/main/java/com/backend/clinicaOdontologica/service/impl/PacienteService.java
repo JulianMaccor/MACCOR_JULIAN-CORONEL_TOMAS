@@ -8,6 +8,7 @@ import com.backend.clinicaOdontologica.exceptions.ResourceNotFoundException;
 import com.backend.clinicaOdontologica.repository.PacienteRepository;
 import com.backend.clinicaOdontologica.service.IPacienteService;
 import com.backend.clinicaOdontologica.utils.JsonPrinter;
+import jakarta.transaction.Transactional;
 import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -33,6 +34,7 @@ public class PacienteService implements IPacienteService {
     }
 
     @Override
+    @Transactional
     public PacienteSalidaDto registrarPaciente(PacienteEntradaDto paciente) {
 
         LOGGER.info("PacienteEntradaDto: " + JsonPrinter.toString(paciente));
@@ -48,7 +50,6 @@ public class PacienteService implements IPacienteService {
 
     @Override
     public List<PacienteSalidaDto> listarPacientes() {
-
         List<PacienteSalidaDto> pacientesSalidaDto = pacienteRepository.findAll()
                 .stream()
                 .map(paciente -> modelMapper.map(paciente, PacienteSalidaDto.class))
@@ -67,7 +68,7 @@ public class PacienteService implements IPacienteService {
         if (pacienteBuscado != null) {
             pacienteEncontrado = modelMapper.map(pacienteBuscado, PacienteSalidaDto.class);
             LOGGER.info("Paciente encontrado: {}", JsonPrinter.toString(pacienteEncontrado));
-        } else LOGGER.error("Este id no se encuentra registrado en la base de datos");
+        } else LOGGER.error("El id no se encuentra registrado en la base de datos");
 
         return pacienteEncontrado;
     }
@@ -116,5 +117,6 @@ public class PacienteService implements IPacienteService {
                 .addMappings(mapper -> mapper.map(PacienteModificacionEntradaDto::getDomicilioModificacionEntradaDto, Paciente::setDomicilio));
 
     }
+
 
 }

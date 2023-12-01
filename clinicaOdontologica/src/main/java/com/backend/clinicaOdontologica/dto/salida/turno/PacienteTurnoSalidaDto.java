@@ -1,30 +1,19 @@
-package com.backend.clinicaOdontologica.entity;
-
-import jakarta.persistence.*;
+package com.backend.clinicaOdontologica.dto.salida.turno;
 
 
-@Entity
-@Table(name = "ODONTOLOGOS")
-public class Odontologo {
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class PacienteTurnoSalidaDto {
     private Long id;
-
-    private String matricula;
-
-
     private String nombre;
-
-
     private String apellido;
 
-    public Odontologo() {
+    public PacienteTurnoSalidaDto() {
     }
 
-
-    public Odontologo(String matricula, String nombre, String apellido) {
-        this.matricula = matricula;
+    public PacienteTurnoSalidaDto(Long id, String nombre, String apellido) {
+        this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
     }
@@ -35,14 +24,6 @@ public class Odontologo {
 
     public void setId(Long id) {
         this.id = id;
-    }
-
-    public String getMatricula() {
-        return matricula;
-    }
-
-    public void setMatricula(String matricula) {
-        this.matricula = matricula;
     }
 
     public String getNombre() {
@@ -61,5 +42,8 @@ public class Odontologo {
         this.apellido = apellido;
     }
 
-
+    @Override
+    public String toString() {
+        return "Id: " + id + " - Nombre: " + nombre + " - Apellido: " + apellido;
+    }
 }

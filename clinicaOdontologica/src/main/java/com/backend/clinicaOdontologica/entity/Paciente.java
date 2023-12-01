@@ -23,6 +23,7 @@ public class Paciente {
     @JoinColumn(name = "domicilio_id")
     private Domicilio domicilio;
 
+
     public Paciente() {
     }
 
@@ -82,4 +83,5 @@ public class Paciente {
     public void setDomicilio(Domicilio domicilio) {
         this.domicilio = domicilio;
     }
+
 }
